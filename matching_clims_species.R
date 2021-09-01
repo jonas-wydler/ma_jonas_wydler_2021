@@ -1,7 +1,7 @@
 
 ##### ETHZ, Script from Fabio Benedetti, extended by Jonas Wydler on the 18.12.2020
 #	 - Re-fitting the env predictors (updated version from 18/09/2020) to the species occurrences
-
+#updated:1.9.2021 for legacy after leaving the group
 Sys.setenv(LANGUAGE= 'en')
 # -------------------------------------------------------------------------------------------
 library("raster")
