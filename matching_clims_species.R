@@ -4,8 +4,6 @@
 
 Sys.setenv(LANGUAGE= 'en')
 # -------------------------------------------------------------------------------------------
-library("ggplot2") 
-library("tidyverse")
 library("raster")
 library("rgeos")
 library("raster")
@@ -15,8 +13,7 @@ library("tidyr")
 library("ncdf4")
 library("RColorBrewer") # nice color palettes (discrete and continuous)
 library("viridis") # even better palettes for continuous data like SST etc.
-library("cmocean") # very nice palettes as well
-library("parallel")
+library("cmocean")
 # -------------------------------------------------------------------------------------------
 #define working dirs
 wd_data <- ("") #dir where the data
