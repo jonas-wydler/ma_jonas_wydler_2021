@@ -25,8 +25,6 @@ fct <- fct[!is.na(fct$max_body_length),]
 fct <- fct[fct$na_count < 2,]
 # ---------------------------------------------------------------------------------------------------------------------
 ###FAMD
-
-#not sure why we do this
 fct <- fct[]
 
 #saving as factors for FAMD
