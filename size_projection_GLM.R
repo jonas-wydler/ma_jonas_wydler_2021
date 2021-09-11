@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------------
 #Global copepod body size projections using SDMs and trait table, Jonas Wydler 14.12.2020, updated 11.09.2021
 # - Uses copepod community tables (from the SDMs) and copepod body size information to project a CW median body size for the globe
-# Replace GLM everywhere for GLM and ANN or use the provided scripts.
+# Replace GLM everywhere for GAM and ANN or use the provided scripts.
 # -------------------------------------------------------------------------------------------------
 Sys.setenv(LANGUAGE= 'en')
 
