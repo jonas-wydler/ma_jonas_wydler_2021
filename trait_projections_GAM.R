@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------
-#Global copepod Community weighted median proportion of functional traits projections using SDMs and trait table, 
+#Global copepod Community weighted mean proportion of functional traits projections using SDMs and trait table, 
 #Jonas Wydler 6.01.2021, updated 11.09.2021
 # Replace GAM everywhere for GLM and ANN or use the provided scripts.
 # -------------------------------------------------------------------------------------------------
