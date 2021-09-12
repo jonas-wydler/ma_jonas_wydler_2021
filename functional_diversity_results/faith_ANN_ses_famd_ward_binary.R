@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------------
-#map faith index, 19.01.2021
-#
-#updated 26.1.21
+#map functional richness via faith index, 19.01.2021
+# Jonas Wydler
+#updated 13.09.2021
 # -------------------------------------------------------------------------------------------------
 Sys.setenv(LANGUAGE= 'en')
 
@@ -21,17 +21,6 @@ library("picante")#this is to calc faith index
 months <- c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
 world2 <- map_data("world2") # world coastline for maps 
 world1 <- map_data("world")
-
-# #local
-# wd_back <- ("C:/Users/Jonas/ma/sdm/background/")
-# wd_ct_ANN <- ("C:/Users/Jonas/ma/sdm/background/ct/ct_ANN/")
-# wd_scores <- ("C:/Users/Jonas/ma/sdm/background/Scores/Scores_all_from_projections/")
-# wd_omit <- ("C:/Users/Jonas/ma/sdm/background/low_TSS_species_projections/")
-# wd_clim <- ("C:/Users/Jonas/ma/sdm/global_monthly_clims_1d/")
-# wd_script <- ("C:/Users/Jonas/ma/sdm/part3/")
-# wd_size <- ("C:/Users/Jonas/ma/r/current/")
-# wd_maps <- ("C:/Users/Jonas/ma/sdm/part3/fd_maps/ANN/Faith/")
-
 
 #kryo
 wd_back <- ("/data/species_background_data/")
