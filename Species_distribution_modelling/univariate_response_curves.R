@@ -13,8 +13,11 @@ library("biomod2") #needed
 
 Sys.setenv(LANGUAGE= 'en')
 
-data.wd.back <- ("wd_data/species_background_data/")
-second.wd <- paste0("wd_data/niche.modelling_resp_curves")
+data.wd.back <- ("/data/species_background_data/") #directory load background data from
+second.wd <- paste0("/data/niche.modelling_resp_curves/") #directory to save model output as backup 
+wd_response_curves_plots <- ("/data/plots_response_curves/") #directory to save response curves plots
+wd_niche_trait_tables <- ("/data/niche_traits") #directory to save niche characteristics data for furhter use in PCA
+wd_scores <- ("/data/Scores/") # wd to save evaluation scores 
 # --------------------------------------------------------------------------------------------------------------------------------
 
 # Vector of SDMs
@@ -374,11 +377,11 @@ for(f in f) {
                                 message(paste("", sep = ""))
                                          
                                 ### Print panel in appropriate dir
-                                setwd(paste(data.wd.back,"/resp_curves/plots/", sep = "")) # change accordingly
+                                setwd(wd_response_curves_plots) 
                                 ggsave(plot = panel, filename = paste("panel_respcurv_",sdm,"_group_",unique(data[data$obs == 1,"species"]),".jpg", sep = ""), dpi = 300, height = 4, width = 10)
                                 
                                 ### Save niche traits table
-                                setwd(paste(data.wd.back,"/resp_curves/niche_traits/", sep = "")) # change accordingly
+                                setwd(wd_niche_trait_tables) # change accordingly
             					          save(table.niche.traits, file = paste("table_niche_traits_",sdm,"_group_",unique(data[data$obs == 1,"species"]),".Rdata", sep = ""))
  
                                 rm(niche.plots, table.niche.traits, table.resp)
@@ -388,7 +391,7 @@ for(f in f) {
                         } # eo for loop sdm in SDMs
                         
     					### Save evaluation scores again, should be nearly the same as before  
-    					setwd(paste(data.wd.back,"/","Scores", sep = ""))
+    					setwd(wd_scores)
     					save(scores.tbl, file = paste("eval_scores_for_respcurv_",sdm,"_",unique(data[data$obs == 1,"species"]),".Rdata", sep = ""))
                         rm(scores.tbl)
                         gc()
