@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------------
-#map functional richness via faith index, 19.01.2021
+#map standardized effect size of functional richness via faith index, 19.01.2021
 # Jonas Wydler
 #updated 13.09.2021
 # -------------------------------------------------------------------------------------------------
