@@ -35,6 +35,10 @@ wd_fd_gam <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/GAM/"
 wd_fd_glm <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/GLM/")
 wd_fd_ann <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/ANN/")
 
+wd_fd_gam <- ("/data/functional_diversity_results/ses/faith_ses_bin_famd_ward_GAM//")
+wd_fd_glm <- ("/data/functional_diversity_results//ses/faith_ses_bin_famd_ward_GLM//")
+wd_fd_ann <- ("/data/functional_diversity_results/ses/faith_ses_bin_famd_ward_ANN//")
+
 
 wd_clim <- ("C:/Users/Jonas/ma/sdm/global_monthly_clims_1d/")
 # # -------------------------------------------------------------------------------------------------
