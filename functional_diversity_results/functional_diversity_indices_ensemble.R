@@ -1,25 +1,12 @@
 # -------------------------------------------------------------------------------------------------
-#map fd, 17.01.2021
+#Script to calculate model ensemble for functional diversity indices, Jonas Wydler, 17.01.2021
 #
-#Update 01.02.2021: The current plan is to use ses.pd (faith index) for PDichness and the the indices from the FD packages for everything else.
-#Here we compute the ensemble to use it for correlations with env. properties. PDic and FDic need the convex hulls to work which sadly doesn't seem
-#to.
-#updated 17.02.2021
-#updated 01.4.21 2nd go I updated the code to make sure only cells are in that have all values (otherwhise GLM shows a few weird cells at high lats)
 # -------------------------------------------------------------------------------------------------
+Sys.setenv(LANGUAGE= 'en')
 Sys.setenv(LANGUAGE= 'en')
 
 library("tidyverse")
-library("reshape2")
-library("biomod2")
 library("viridis")
-#library("vegan")
-library("FactoMineR")
-library("dplyr")
-library("parallel")
-library("FD")
-library("missMDA")
-library("ggpubr")
 
 #global var
 months <- c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
@@ -27,18 +14,14 @@ world2 <- map_data("world2") # world coastline for maps
 world1 <- map_data("world")
 
 
-#local
-wd_fd_maps <- ("C:/Users/Jonas/polybox/part3/2ndgo/")
-wd_ensmb <- ("C:/Users/Jonas/polybox/part3/2ndgo/")
+wd_fd_maps <- ("/data/") #directory where you want your maps to go
+wd_ensmb <- ("/data/") #directory where you want to save the ensemble data
 
-wd_fd_gam <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/GAM/")
-wd_fd_glm <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/GLM/")
-wd_fd_ann <- ("C:/Users/Jonas/polybox/part3/data_for_ensemble/fd/fd_convex/ANN/")
+("/data/functional_diversity_results/functional_diversitiy_indices/") 
 
-wd_fd_gam <- ("/data/functional_diversity_results/ses/faith_ses_bin_famd_ward_GAM//")
-wd_fd_glm <- ("/data/functional_diversity_results//ses/faith_ses_bin_famd_ward_GLM//")
-wd_fd_ann <- ("/data/functional_diversity_results/ses/faith_ses_bin_famd_ward_ANN//")
-
+wd_fd_gam <- ("/data/functional_diversity_results/functional_diversitiy_indices/GAM") 
+wd_fd_glm <- ("/data/functional_diversity_results/functional_diversitiy_indices/GLM") 
+wd_fd_ann <- ("/data/functional_diversity_results/functional_diversitiy_indices/ANN") 
 
 wd_clim <- ("C:/Users/Jonas/ma/sdm/global_monthly_clims_1d/")
 # # -------------------------------------------------------------------------------------------------
