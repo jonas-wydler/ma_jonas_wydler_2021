@@ -23,7 +23,7 @@ wd_fd_gam <- ("/data/functional_diversity_results/functional_diversitiy_indices/
 wd_fd_glm <- ("/data/functional_diversity_results/functional_diversitiy_indices/GLM") 
 wd_fd_ann <- ("/data/functional_diversity_results/functional_diversitiy_indices/ANN") 
 
-wd_clim <- ("C:/Users/Jonas/ma/sdm/global_monthly_clims_1d/")
+wd_clim <- ("/data/global_monthly_clims_1d/")
 # # -------------------------------------------------------------------------------------------------
 
 setwd(wd_clim)
