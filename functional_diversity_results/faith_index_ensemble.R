@@ -26,19 +26,17 @@ months <- c("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","d
 world2 <- map_data("world2") # world coastline for maps 
 world1 <- map_data("world")
 
+wd_fd_maps <- ("/data/") #directory where you want your maps to go
+wd_ensmb <- ("/data/") #directory where you want to save the ensemble data
 
-#local
-wd_fd_maps <- ("C:/Users/Jonas/polybox/part3/2ndgo/")
-wd_ensmb <- ("C:/Users/Jonas/polybox/part3/2ndgo/")
+wd_fd_dat_nonses_faith_gam <- ("/data/functional_diversity_results/functional_richness_faith_non_ses/faith_nonses_bin_famd_ward_GAM/")
+wd_fd_dat_nonses_faith_glm <- ("/data/functional_diversity_results/functional_richness_faith_non_ses/faith_nonses_bin_famd_ward_GLM/")
+wd_fd_dat_nonses_faith_ann <- ("/data/functional_diversity_results/functional_richness_faith_non_ses/faith_nonses_bin_famd_ward_ANN/")
 
-wd_fd_dat_nonses_faith_gam <- ("C:/Users/Jonas/polybox/part3/2ndgo/non-ses/faith_nonses_bin_famd_ward_GAM/")
-wd_fd_dat_nonses_faith_glm <- ("C:/Users/Jonas/polybox/part3/2ndgo/non-ses/faith_nonses_bin_famd_ward_GLM/")
-wd_fd_dat_nonses_faith_ann <- ("C:/Users/Jonas/polybox/part3/2ndgo/non-ses/faith_nonses_bin_famd_ward_ANN/")
-
-wd_fd_dat_ses_faith_gam <- ("C:/Users/Jonas/polybox/part3/2ndgo/ses/faith_ses_bin_famd_ward_GAM/")
-wd_fd_dat_ses_faith_glm <- ("C:/Users/Jonas/polybox/part3/2ndgo/ses/faith_ses_bin_famd_ward_GLM/")
-wd_fd_dat_ses_faith_ann <- ("C:/Users/Jonas/polybox/part3/2ndgo/ses/faith_ses_bin_famd_ward_ANN/")
-wd_clim <- ("C:/Users/Jonas/ma/sdm/global_monthly_clims_1d/")
+wd_fd_dat_ses_faith_gam <- ("/data/functional_diversity_results/functional_richness_faith_ses/faith_ses_bin_famd_ward_GAM/")
+wd_fd_dat_ses_faith_glm <- ("/data/functional_diversity_results/functional_richness_faith_ses/faith_ses_bin_famd_ward_GLM/")
+wd_fd_dat_ses_faith_ann <- ("/data/functional_diversity_results/functional_richness_faith_ses/faith_ses_bin_famd_ward_ANN)
+wd_clim <- ("/data/global_monthly_clims_1d/")
 
 
 # # -------------------------------------------------------------------------------------------------
